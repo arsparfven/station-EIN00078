@@ -51,10 +51,10 @@ a:active {
             function next(n){
                   var name = randomlinks[n] + ".html";
               var time = Math.floor(Math.random() * 120000) + 60000;
-                    setTimeout(function() { change(name); },time);
+                    setTimeout(function() { changewindow(name); },time);
             }
   
-  function change(name){
+  function changewindow(name){
     window.location.href=name;
   }
                 var randomlinks=[];
