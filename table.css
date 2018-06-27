@@ -6,23 +6,22 @@ body {
   font-family: monospace;
   font-size: 120%;
 }
-
-  a:link {
-    text-decoration: none;
-    color: white;
+a:link {
+  text-decoration: none;
+  color: white;
 }
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
   color: #e7e7e7;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
   color: #e7e7e7;
 }
 
 a:active {
-    text-decoration: none;
+  text-decoration: none;
   color: #e7e7e7;
 }
