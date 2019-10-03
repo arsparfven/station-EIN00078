@@ -1,8 +1,55 @@
+
+
 <head>
   <title>station-EIN0078</title>
   <link rel="stylesheet" type="text/css" href="../CSS/content.css">
 </head>
 <body>
+  
+  
+  <script type="text/javascript">
+    
+     var visit = 0;
+    
+function setCookie(cname) {
+  document.cookie = cname + "=" + cvalue + ";path=/";
+  visit++;
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user = getCookie("visitor");
+  if (user != "") {
+    visit++;
+    if (visit = 2) {
+      window.location.href="Chat/visit2.html"
+      {
+ //   else if (visit = 3) {
+//      window.location.href="Chat/visit3.html"
+    }
+  } else {
+      setCookie("visitor");
+    }
+  }
+}
+</script>
+  
+  
+  
 Medical Examiner Notes<br />
 
 EIN 99918<br />
