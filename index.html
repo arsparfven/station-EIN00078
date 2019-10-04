@@ -22,19 +22,19 @@
 <script type="text/javascript">
     
                 var clicks = 0;
-                //var pass = passwd.pw.value
+                var pass = passwd.pw.value
                // var pass = document.getElementById("pw").value;
     
                 function upCount() { 
-                //  if (pass = "subjectB") {
-                //    window.location.href="Chat/happy.html";
-                //  }
-               //  else {
+                 if (pass == "subjectB") {
+                   window.location.href="Chat/happy.html";
+                  }
+                 else {
     		      		clicks++;
                         window.alert("Incorrect. Please try again.");
                   if (clicks == 3)
                     window.location.href="Chat/hack.html";
-                //  }
+                  }
                 }
                 
                 
